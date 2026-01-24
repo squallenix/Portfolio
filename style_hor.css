@@ -1,0 +1,60 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar_hor {
+    background-color: rgba(7, 5, 5, 0.7 );
+}
+.navbar_hor ul {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.logo_hor {
+    margin-right: 300px; 
+}
+
+.logo_hor img {
+    height: 100%;
+    display: block; 
+}
+.menu_hor { 
+    margin-right: 50px;
+}
+.menu_hor a {
+    padding: 0px 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.menu_hor a:hover {
+    background-color: gray;
+    border-radius: 10px;
+}
+.home_bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}    
+body {
+    background-color: black;
+    color: white;
+}
+.quote {
+    margin-top: 70px;
+    margin-left: 200px;
+    font-size: 50px;
+
+}
+.intro {
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 20px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_ver.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@11/lib/browser/math.js"></script>
+    <script src="logic.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <img src="./image/calculator_bg.jpg" alt="Background" class="home_bg">
+    <nav class="navbar_ver">
+        <ul>
+            <a class="logo_ver" href="page.html">
+                <img src=".\icon\title_icon.png" alt="Name icon" width="100" height="100">
+            </a>    
+            <li class="menu_ver">
+                <a href="calculator.html">
+                    Calculator
+                </a>
+            </li>
+            <li class="menu_ver">
+                <a href="ai_chatbot.html">
+                    AI Chatbot
+                </a>
+            </li>
+            <li class="menu_ver">
+                <a href="page.html">
+                    Home
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <label class="Label" for="display">Calculator Display:</label><br>
+    <textarea class="textbox" id="display" rows="4" cols="30" disabled></textarea>
+    <div class="button-container">
+        <button class="calc-button" onclick="appendToDisplay('7')">7</button>
+        <button class="calc-button" onclick="appendToDisplay('8')">8</button>
+        <button class="calc-button" onclick="appendToDisplay('9')">9</button>
+        <button class="calc-button" onclick="appendToDisplay('/')">/</button><br>
+        <button class="calc-button" onclick="appendToDisplay('4')">4</button>
+        <button class="calc-button" onclick="appendToDisplay('5')">5</button>
+        <button class="calc-button" onclick="appendToDisplay('6')">6</button>
+        <button class="calc-button" onclick="appendToDisplay('*')">*</button><br>
+        <button class="calc-button" onclick="appendToDisplay('1')">1</button>
+        <button class="calc-button" onclick="appendToDisplay('2')">2</button>
+        <button class="calc-button" onclick="appendToDisplay('3')">3</button>
+        <button class="calc-button" onclick="appendToDisplay('-')">-</button><br>
+        <button class="calc-button" onclick="appendToDisplay('0')">0</button>
+        <button class="calc-button" onclick="clearDisplay()">C</button>
+        <button class="calc-button" onclick="calculateResult()">=</button>
+        <button class="calc-button" onclick="appendToDisplay('+')">+</button><br>
+        
+</body>
+</html>
