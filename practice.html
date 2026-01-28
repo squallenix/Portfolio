@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style_ver.css">
+    <script src="logic.js" defer></script>
+    <title>Counter</title>
 </head>
 <body>
-    <label for="display">Calculator Display:</label><br>
-    <textarea class="textbox" id="display" rows="4" cols="50"></textarea>
+    <img src="./image/calculator_bg.jpg" alt="Background" class="home_bg">
+    <nav class="navbar_ver">
+        <ul>
+            <a class="logo_ver" href="page.html">
+                <img src=".\icon\title_icon.png" alt="Name icon" width="100" height="100">
+            </a>    
+            <li class="menu_ver">
+                <a href="calculator.html">
+                    Calculator
+                </a>
+            </li>
+            <li class="menu_ver">
+                <a href="ai_chatbot.html">
+                    AI Chatbot
+                </a>
+            </li>
+            <li class="menu_ver">
+                <a href="page.html">
+                    Home
+                </a>
+            </li>
+        </ul>
+    </nav>  
+    <div>
+        <form class="form">
+            <button class="decrement" type="button" onclick="decrement()">-</button>
+            <span id="counter"></span>
+            <button class="increment" type="button" onclick="increment()">+</button>
+            <button class="reset" type="button" onclick="resetCounter()">Reset</button>
+        </form>     
+    </div>
+    
 </body>
 </html>
