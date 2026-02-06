@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="todo.js" defer></script>
+    <link rel="stylesheet" href="todo.css">
 </head>
 <body>
-  <div>
-    <h1>Todo List</h1>
-    <input type="text" id="input" placeholder="Enter task">
-    <button id="add">Add</button>
+  <img src="./image/gradientBg.jpg" alt="bg" class="bg">
+  <div class="todoContainer">
+      <h1><img src="./icon/todo.png" alt="icon" class="icon">Todo List</h1>
+      <p class="subtitle">Click on a task to mark it as complete</p>
+
+    <div class="inputArea">
+      <input type="text" id="input" placeholder="Enter task">
+      <button id="add">Add</button>
+    </div>
+
+    <div class="filterArea">
+      <button id="all">All</button>
+      <button id="active">Active</button>
+      <button id="completed">Completed</button>
+    </div>
+    <div class="counter">
+      <div>Total Tasks<span id="totalTasks">0</span></div>
+      <div>Active Tasks<span id="activeTasks">0</span></div>
+      <div>Completed Tasks<span id="completedTasks">0</span></div>
+    </div>
+     <ul id="taskList">
+      <li class="task">Sample Task 1</li>
+     </ul>
+    <div class="clearArea">
+      <button id="clearCompleted">Clear Completed</button>
+      <button id="clearAll">Clear All</button>
+    </div> 
   </div>  
 </body>
 </html>
