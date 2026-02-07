@@ -12,7 +12,7 @@
     max-width: 400px;
     margin: 100px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -31,9 +31,66 @@ h1{
 .subtitle{
     margin-top: 0;
     text-align: center;
+        color: black;
+        font-size: 1.1em;
 }
 .inputArea{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }/*easy */
+.Input{
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    border-color: antiquewhite;
+}
+.addButton{
+    margin-left: 5px;
+    height: 33px;
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.addButton:hover{
+    background-color: #45a049;
+}
+.filterArea{
+    display: flex;
+    margin-bottom: 20px;
+}
+.filterArea button{
+    margin-right: 10px;
+    height: 30px;
+    width: 80%;
+    background-color: rgba(137, 43, 226, 0.397);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.filterArea button:hover{
+    background-color: rgba(137, 43, 226, 0.8);
+}
+.counter{
+    display: flex;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    background-color: rgba(234, 227, 227, 0.801);
+}
+.counter div{
+    margin: 0 10px;
+    color: #000000e4;
+}
+.counter div span{
+    font-weight: bold;
+    color: blue;
+}
+.tasklist{
+    list-style-type: none;
+    padding: 0;
+    background-color: aqua;
+}
